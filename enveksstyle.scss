@@ -171,3 +171,112 @@
     background-position: 0% 0%;
   }
 }
+
+
+
+
+.application-areas-container {
+  margin-top: 6.5rem;
+  position: relative;
+
+  .text-center{
+    margin-bottom: 5rem;
+  }
+  .row {
+    justify-content: center;
+  }
+
+  .application-card {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    
+    .card-content {
+      background-color: #ffffff;
+      padding: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 3rem;
+      }
+
+      .card-title {
+        margin-top: 0.5rem;
+        font-family: 'Suse', sans-serif;
+        font-weight: 600;
+        color: #333;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 0.3rem; /* Altındaki çizgi için boşluk bırak */
+        transition: color 0.3s ease;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background-color: transparent; /* İlk başta görünmez */
+          transition: background-color 0.3s ease;
+          z-index: -1; /* Çizgiyi başlığın altına al */
+          border-bottom: 2px solid #c81414; /* Kalemle çizilmiş görünümü için */
+          transform: scaleX(0); /* Başlangıçta görünmez */
+          transform-origin: left center; /* Soldan başlayarak genişler */
+        }
+      }
+
+      &:hover .card-title {
+        color: #000000; /* Başlık rengi değiştirilebilir */
+      }
+
+      &:hover .card-title::after {
+        transform: scaleX(1); /* Çizgi genişlet */
+        background-color: #000; /* Çizginin rengi */
+      }
+    }
+  }
+
+
+  .application-card.scroll-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Kartların kayma efektleri için animasyonlar
+@keyframes scrollRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// Scroll etkinleştirme
+
+
+
+
