@@ -34,8 +34,8 @@
 
     .nav-link {
       color: #ffffff;
-      font-size: 14px;
-      font-family: "Michroma", sans-serif;
+      font-size: 18px;
+      font-family: "Suse", sans-serif;
       font-weight: 200;
 
       &:hover {
@@ -43,7 +43,41 @@
       }
     }
   }
+
+  .hero-text {
+    position: absolute;
+    top: 23rem;
+    left: 17rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    max-width: 80%;
+    
+    h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      border-radius: 10px;
+      font-family: "Michroma", sans-serif;
+      margin-bottom: 1rem;
+      text-shadow: 3px 1px 5px #000000bd;
+    }
+
+    .typewriter {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      font-family: "Helvetica", sans-serif;
+      overflow: hidden;
+      width: 100%; /* Responsive genişlik */
+      max-width: 100%;
+      margin: 0; /* Ortala */
+      text-align: left;
+      text-shadow: 3px 1px 5px #000000bd;
+    }
+  }
 }
+
+// Dust Control Kısmı
 
 .reference-carousel {
   width: 100%;
@@ -174,109 +208,89 @@
 
 
 
+// Footer
 
-.application-areas-container {
-  margin-top: 6.5rem;
-  position: relative;
+.footer {
+  background-color: #212121;
+  padding: 10px 0; 
+  margin-top: 8rem;
 
-  .text-center{
-    margin-bottom: 5rem;
-  }
-  .row {
-    justify-content: center;
-  }
+  .footer-bottom {
+    border-top: 1px solid #5da8f7;
+    padding-top: 1rem; 
+    margin-top: 5rem;
 
-  .application-card {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    transform: translateY(30px);
-    opacity: 0;
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    
-    .card-content {
-      background-color: #ffffff;
-      padding: 0.5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      text-align: center;
-      transition: transform 0.3s ease;
-      
-      &:hover {
-        transform: scale(1.05);
+    .footer-logo {
+      img.logo {
+        max-width: 200px;
       }
+    }
 
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 3rem;
-      }
+    p {
+      font-size: 0.75rem;
+      color: #ffffff;
+      margin-top: 4px;
+    }
+  }
 
-      .card-title {
-        margin-top: 0.5rem;
-        font-family: 'Suse', sans-serif;
-        font-weight: 600;
-        color: #333;
-        position: relative;
-        display: inline-block;
-        padding-bottom: 0.3rem; /* Altındaki çizgi için boşluk bırak */
-        transition: color 0.3s ease;
+  h6{
+    color: rgb(255, 255, 255);
+  }
 
-        &::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 2px;
-          background-color: transparent; /* İlk başta görünmez */
-          transition: background-color 0.3s ease;
-          z-index: -1; /* Çizgiyi başlığın altına al */
-          border-bottom: 2px solid #c81414; /* Kalemle çizilmiş görünümü için */
-          transform: scaleX(0); /* Başlangıçta görünmez */
-          transform-origin: left center; /* Soldan başlayarak genişler */
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 0.3rem; 
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0.85rem;
+        &:hover {
+          color: rgb(27, 156, 255);
         }
-      }
-
-      &:hover .card-title {
-        color: #000000; /* Başlık rengi değiştirilebilir */
-      }
-
-      &:hover .card-title::after {
-        transform: scaleX(1); /* Çizgi genişlet */
-        background-color: #000; /* Çizginin rengi */
       }
     }
   }
 
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-right: 1.5rem;
+    
+    a {
+      display: inline-block;
+      img.social-icon {
+        width: 30px; 
+        height: 30px;
+        transition: transform 0.2s; 
+        
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  
 
-  .application-card.scroll-visible {
-    opacity: 1;
-    transform: translateY(0);
+  .newsletter-form {
+    .form-control {
+      margin-bottom: 6px; 
+      border-radius: 1rem;
+      font-size: 0.85rem; 
+      padding: 0.4rem 0.6rem;
+    }
+    .btn-primary {
+      border-radius: 1rem;
+      background-color: #007bff;
+      font-size: 0.85rem; 
+      padding: 0.3rem 0.8rem;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
   }
 }
-
-// Kartların kayma efektleri için animasyonlar
-@keyframes scrollRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-// Scroll etkinleştirme
-
-
 
 

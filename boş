@@ -1,98 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>ENVEKS</title>
-</head>
-<body>
-  <!-- Önceki içerik burada yer alıyor -->
+<div class="dust-control-container position-relative overflow-hidden">
+  <!-- Dust Control İçeriği... -->
 
-  <!-- Uygulama Alanları -->
-  <div class="application-area-container position-relative overflow-hidden">
-    <div class="container py-5">
-      <div class="row gx-5 align-items-center">
-        <!-- Uygulama alanı isimleri -->
-        <div class="col-md-8 application-names">
-          <div class="application-name-list">
-            <!-- Uygulama alanı isimleri buraya JavaScript ile eklenecek -->
+  <!-- Uygulama Alanlarımız -->
+  <div class="application-areas-container position-relative">
+    <h2 class="text-center mb-5 mt-4">UYGULAMA ALANLARIMIZ</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 application-cards">
+      <!-- Kartlar -->
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 1" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 1</h5>
           </div>
         </div>
-        <!-- Sağdaki görsel -->
-        <div class="col-md-4 application-image">
-          <img src="gorsel1.jpg" class="img-fluid shadow" alt="Görsel 1">
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 2" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 2</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 3" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 3</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 4" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 4</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 5" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 5</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 6" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 6</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 7" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 7</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 8" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 8</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 9" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 9</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 10" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 10</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 11" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 11</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 12" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 12</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 13" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 13</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 14" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 14</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 15" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 15</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="application-card">
+          <img src="tozkontrol.webp" alt="Toz Kontrol 16" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Uygulama Alanı 16</h5>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- JavaScript -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const applicationNames = [
-        "Uygulama Alanı 1",
-        "Uygulama Alanı 2",
-        "Uygulama Alanı 3",
-        "Uygulama Alanı 4",
-        "Uygulama Alanı 5",
-        "Uygulama Alanı 6",
-        "Uygulama Alanı 7",
-        "Uygulama Alanı 8",
-        "Uygulama Alanı 9",
-        "Uygulama Alanı 10",
-        "Uygulama Alanı 11",
-        "Uygulama Alanı 12",
-        "Uygulama Alanı 13",
-        "Uygulama Alanı 14",
-        "Uygulama Alanı 15",
-        "Uygulama Alanı 16"
-      ];
-
-      const images = ["gorsel1.jpg", "gorsel2.jpg", "gorsel3.jpg", "gorsel4.jpg"];
-      let currentIndex = 0;
-
-      const applicationNameList = document.querySelector('.application-name-list');
-      const applicationImage = document.querySelector('.application-image img');
-
-      const updateContent = () => {
-        // Uygulama alanı isimlerini güncelle
-        applicationNameList.innerHTML = '';
-        for (let i = currentIndex; i < currentIndex + 4; i++) {
-          if (applicationNames[i]) {
-            const nameElement = document.createElement('h4');
-            nameElement.classList.add('application-name', 'mb-4');
-            nameElement.textContent = applicationNames[i];
-            applicationNameList.appendChild(nameElement);
-          }
-        }
-
-        // Görseli güncelle
-        const imageIndex = Math.floor(currentIndex / 4) % images.length;
-        applicationImage.src = images[imageIndex];
-
-        // İndeksi güncelle
-        currentIndex = (currentIndex + 4) % applicationNames.length;
-      };
-
-      // İlk içeriği göster
-      updateContent();
-
-      // Scroll event listener ekleyin
-      window.addEventListener('scroll', function () {
-        const scrollHeight = document.documentElement.scrollHeight;
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const clientHeight = window.innerHeight;
-
-        // Kullanıcı sayfanın sonuna yaklaştığında yeni içerik yükleyin
-        if (scrollTop + clientHeight >= scrollHeight - 100) {
-          updateContent();
-        }
-      });
-    });
-  </script>
-
-</body>
-</html>
+</div>

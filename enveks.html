@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="enveksstyle.css">
+    <link rel="stylesheet" href="Assets/Css/enveksstyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     <title>ENVEKS</title>
 </head>
 <body>
+
+  <!-- Navvar ve Hero Video -->
   <div class="hero-video">
     <video autoplay muted loop id="backgroundVideo">
-      <source src="dust1.mp4" type="video/mp4">
+      <source src="Assets/img/dust1.mp4" type="video/mp4">
     </video>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand me-5 ms-4" href="#">
-          <img src="enveks_logo.png" alt="ENVEKS Logo" width="150" height="30">
+          <img src="Assets/img/enveks_logo.png" alt="ENVEKS Logo" width="150" height="30">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,27 +39,29 @@
       </div>
     </nav>
   </div>
+   <!-- End Navvar ve Hero Video -->
 
   <!-- Kayan Referanslar -->
   <div class="reference-carousel">
     <div class="carousel-track">
-      <img src="anglo-american.png" alt="Reference 1" width="150" height="100">
-      <img src="heidelberg-cement.png" alt="Reference 2" width="150" height="100">
-      <img src="lafarge-cement.png" alt="Reference 3" width="150" height="100">
-      <img src="tupras.jpeg" alt="Reference 4" width="150" height="100">
-      <img src="votarantim.png" alt="Reference 5" width="150" height="100">
-      <img src="anglo-american.png" alt="Reference 1" width="150" height="100">
-      <img src="heidelberg-cement.png" alt="Reference 2" width="150" height="100">
-      <img src="lafarge-cement.png" alt="Reference 3" width="150" height="100">
-      <img src="tupras.jpeg" alt="Reference 4" width="150" height="100">
-      <img src="votarantim.png" alt="Reference 5" width="150" height="100">
+      <img src="Assets/img/anglo-american.png" alt="Reference 1" width="150" height="100">
+      <img src="Assets/img/heidelberg-cement.png" alt="Reference 2" width="150" height="100">
+      <img src="Assets/img/lafarge-cement.png" alt="Reference 3" width="150" height="100">
+      <img src="Assets/img/tupras.jpeg" alt="Reference 4" width="150" height="100">
+      <img src="Assets/img/votarantim,.png" alt="Reference 5" width="150" height="100">
+      <img src="Assets/img/anglo-american.png" alt="Reference 6" width="150" height="100">
+      <img src="Assets/img/heidelberg-cement.png" alt="Reference 7" width="150" height="100">
+      <img src="Assets/img/lafarge-cement.png" alt="Reference 8" width="150" height="100">
+      <img src="Assets/img/tupras.jpeg" alt="Reference 9" width="150" height="100">
+      <img src="Assets/img/votarantim,.png" alt="Reference 10" width="150" height="100">
     </div>
   </div>
+    <!-- End Kayan Referanslar -->
 
   <!-- Toz Kontrol Container -->
   <div class="dust-control-container position-relative overflow-hidden">
     <video autoplay muted loop class="background-video w-100 h-100 position-absolute top-0 start-0">
-      <source src="dust.mp4" type="video/mp4">
+      <source src="Assets/img/dust.mp4" type="video/mp4">
     </video>
     <div class="overlay position-absolute w-100 h-100 top-0 start-0"></div>
     <div class="content position-relative container py-5">
@@ -65,224 +72,190 @@
       <p>Sonuç olarak, toz kontrolü sadece çalışanların sağlığını ve güvenliğini korumakla kalmaz, aynı zamanda işletmelerin uzun vadede maliyetlerini düşürmelerine ve çevreye olan olumsuz etkilerini azaltmalarına yardımcı olur.</p>
     </div>
   </div>
-    
+   <!-- End Toz Kontrol Container -->
 
-<!-- Uygulama Alanları Kartları -->
-<div class="application-areas-container container">
-  <h2 class="text-center">Uygulama Alanlarımız</h2>
-  <div class="row g-4">
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim2.webp" alt="Uygulama 1" class="w-100">
-          <div class="card-title">Çimento Fabrikaları</div>
+ <!-- Uygulama Alanları -->
+ <div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 2" class="w-100">
-          <div class="card-title">Kırma ve Eleme Tesisleri</div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>                
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim2.webp" alt="Uygulama 3" class="w-100">
-          <div class="card-title">Bina Yıkım Operasyonları</div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>                
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 4" class="w-100">
-          <div class="card-title">Termik Santraller</div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>               
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 5" class="w-100">
-          <div class="card-title">Demir ve Çelik Fabrikaları</div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>                
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 6" class="w-100">
-          <div class="card-title">Liman Malzeme Yükleme ve Boşaltma</div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>                
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 7" class="w-100">
-          <div class="card-title">Maden Stok Sahaları</div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>                
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 8" class="w-100">
-          <div class="card-title">Beton Santralleri</div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>               
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 9" class="w-100">
-          <div class="card-title">Kamyon Yükleme ve Boşaltma</div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder:" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>               
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 10" class="w-100">
-          <div class="card-title">Katı Atık Geri Dönüşüm Tesisleri</div>
-        </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 11" class="w-100">
-          <div class="card-title">Petrol Rafinerleri</div>
-        </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 12" class="w-100">
-          <div class="card-title">Su Buharlaştırma</div>
-        </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 13" class="w-100">
-          <div class="card-title">Buz Önleme Kimyasalları Püskürtme</div>
-        </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 14" class="w-100">
-          <div class="card-title">Kamyon Tekerlek ve Kasa Yıkama</div>
-        </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 15" class="w-100">
-          <div class="card-title">Çiftlik Dezenfektasyonu ve Serinletme</div>
-        </div>
-      </a>
-    </div>
-    <div class="col-6 col-md-3">
-      <a href="#" class="application-card d-block text-decoration-none">
-        <div class="card-content">
-          <img src="resim3.webp" alt="Uygulama 16" class="w-100">
-          <div class="card-title">Halka Açık ALanlarda Dezenfektasyon ve Serinletme</div>
-        </div>
-      </a>
+      </div>
     </div>
   </div>
 </div>
+ <!-- End Uygulama Alanları -->
 
 
-  
-  
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const scrollElements = document.querySelectorAll(".content p, .content ul");
-
-      const elementInView = (el, dividend = 1) => {
-        const elementTop = el.getBoundingClientRect().top;
-
-        return (
-          elementTop <=
-          (window.innerHeight || document.documentElement.clientHeight) / dividend
-        );
-      };
-
-      const displayScrollElement = (element) => {
-        element.classList.add("scroll-visible");
-      };
-
-      const hideScrollElement = (element) => {
-        element.classList.remove("scroll-visible");
-      };
-
-      const handleScrollAnimation = () => {
-        scrollElements.forEach((el) => {
-          if (elementInView(el, 1.25)) {
-            displayScrollElement(el);
-          } else {
-            hideScrollElement(el);
-          }
-        });
-      };
-
-      window.addEventListener("scroll", () => {
-        handleScrollAnimation();
-      });
-    });
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-  const applicationCards = document.querySelectorAll(".application-card");
-
-  const elementInView = (el, dividend = 1) => {
-    const elementTop = el.getBoundingClientRect().top;
-
-    return (
-      elementTop <=
-      (window.innerHeight || document.documentElement.clientHeight) / dividend
-    );
-  };
-
-  const displayScrollElement = (element) => {
-    element.classList.add("scroll-visible");
-  };
-
-  const hideScrollElement = (element) => {
-    element.classList.remove("scroll-visible");
-  };
-
-  const handleScrollAnimation = () => {
-    applicationCards.forEach((el, index) => {
-      if (elementInView(el, 1.25)) {
-        displayScrollElement(el);
-        el.style.animation = index % 2 === 0 ? 'scrollRight 1s ease' : 'scrollLeft 1s ease';
-      } else {
-        hideScrollElement(el);
-        el.style.animation = '';
-      }
-    });
-  };
-
-  window.addEventListener("scroll", () => {
-    handleScrollAnimation();
-  });
-});
-
-  
-  </script>
-
+<!-- Footer-->
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 mb-2">
+        <div class="row">
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li><a href="#">Ana Sayfa</a></li>
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Uygulama Alanlarımız</a></li>
+              <li><a href="#">Ürünlerimiz</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li><a href="#">Referanslarımız</a></li>
+              <li><a href="#">İletişim</a></li>
+              <li><a href="#">Gizlilik Politikası</a></li>
+              <li><a href="#">Kullanım Koşulları</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-5 mb-5 text-center">
+        <div class="social-icons">
+          <a href="#"><img src="Assets/img/facebook.png" alt="Facebook" class="social-icon"></a>
+          <a href="#"><img src="Assets/img/twitter.png" alt="Twitter" class="social-icon"></a>
+          <a href="#"><img src="Assets/img/instagram.png" alt="Instagram" class="social-icon"></a>
+          <a href="#"><img src="Assets/img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+          <a href="#"><img src="Assets/img/youtube.png" alt="YouTube" class="social-icon"></a>
+        </div>        
+      </div>
+      <div class="col-lg-4 col-md-6 mb-2 text-center">
+        <h6>Bülten Aboneliği</h6>
+        <form class="newsletter-form">
+          <div class="mb-2">
+            <input type="text" class="form-control w-75 mx-auto" placeholder="Ad Soyad" required>
+          </div>
+          <div class="mb-2">
+            <input type="email" class="form-control w-75 mx-auto" placeholder="Email" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-sm">Abone Ol</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column align-items-center justify-content-center text-center mt-3">
+      <div class="footer-logo">
+        <img src="Assets/img/enveks_logo.png" alt="Envex Logo" class="logo mb-1">
+      </div>
+      <p class="small">ENVEX® Tüm Hakları Saklıdır. © 2024</p>
+    </div>
+  </div>
+</footer>
+<!-- End Footer-->
 
 </body>
 </html>
