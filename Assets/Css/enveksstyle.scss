@@ -21,7 +21,7 @@ $number-color: rgb(193, 193, 193);
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; // Video arka planda kalacak şekilde ayarlanıyor
+    z-index: -1;
   }
 
   .navbar {
@@ -31,10 +31,10 @@ $number-color: rgb(193, 193, 193);
     width: 100%;
     z-index: 100;
     padding: 1rem 2rem;
-    background: transparent; // Şeffaf navbar
+    background: transparent;
 
     .navbar-toggler {
-      border-color: white; // Toggler beyaz
+      border-color: white; 
     }
 
     .navbar-toggler-icon {
@@ -42,17 +42,71 @@ $number-color: rgb(193, 193, 193);
     }
 
     .nav-link {
-      color: #ffffff;
+      color: #323232;
       font-size: 18px;
-      font-family: "Suse", sans-serif;
-      font-weight: 200;
+      font-family: "Helvatica", sans-serif;
+      font-weight: 400;
 
       &:hover {
-        color: #000000; // Hover sırasında linklerin rengi
+        color: #000000; 
       }
+    }
+
+    .dropdown-menu {
+      background-color: rgba(255, 255, 255, 0.8); 
+      border: none;
     }
   }
 }
+.scroll-icon {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+
+.mouse {
+  width: 30px;
+  height: 60px;
+  border: 0.2rem solid #ffffffa6;
+  border-radius: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffffa6;
+    border-radius: 5rem;
+    opacity: 1;
+    animation: wheel 2s infinite;
+  }
+}
+
+// Animasyon tanımları
+@keyframes wheel {
+  0% {
+    opacity: 1;
+    top: 5px;
+  }
+  100% {
+    opacity: 0;
+    top: 40px;
+  }
+}
+
+
 //End Navbar ve Video Kısmı
 
 
@@ -149,7 +203,6 @@ $number-color: rgb(193, 193, 193);
   }
   
 }
-
 // End Kullanılan Teknolojiler ve Yapılan İşler -->
 
 
@@ -169,7 +222,14 @@ $number-color: rgb(193, 193, 193);
     box-shadow: 8px 12px 31px -10px #ab98ab;
   }
 
-  // Card img wrapper
+  @media (max-width: 768px) { 
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 576px) { 
+    margin-bottom: 2rem;
+  }
+
   .card-img-wrapper {
     display: flex;
     align-items: center;
@@ -184,7 +244,6 @@ $number-color: rgb(193, 193, 193);
     }
   }
 
-  // Card body
   .card-body {
     position: absolute;
     bottom: 0;
@@ -194,13 +253,11 @@ $number-color: rgb(193, 193, 193);
     background-color: #fff;
     transition: height 1.5s ease;
 
-    // Card title
     .card-title {
       margin-bottom: calc(50% + 20px);
       transition: margin-bottom 1.5s ease;
     }
 
-    // Card content
     .card-content {
       left: 0;
       right: 0;
@@ -224,7 +281,6 @@ $number-color: rgb(193, 193, 193);
   }
 }
 
-// card-image ayarları
 .section-machine {
   margin-top: 5rem;
   .card {
@@ -246,6 +302,15 @@ $number-color: rgb(193, 193, 193);
       transition: height 0.3s ease-in-out;
       height: 3rem;
       overflow: hidden;
+
+      @media (max-width: 768px) { /* Tablet ve daha küçük ekranlar */
+        height: 0rem; /* Daha küçük bir yükseklik */
+      }
+    
+      @media (max-width: 576px) { /* Mobil ekranlar */
+        height: auto; /* İçeriğin yüksekliğine göre otomatik yükseklik */
+        padding: rem; /* Daha küçük padding */
+      }
 
       .card-title {
         color: white;
@@ -271,6 +336,27 @@ $number-color: rgb(193, 193, 193);
   }
 }
 
+#machineCarousel .carousel-indicators {
+  position: absolute;
+    bottom: -3.5rem;
+    display: flex;
+    justify-content: center;
+    
+  [data-bs-target] {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #6bb2ff;
+
+    &:hover {
+      background-color: lighten(#0056b3, 10%);
+    }
+  }
+
+  .active {
+    background-color: #0056b3;
+  }
+}
 
 // End Kullanılan Makineler ve Yararları -->
 
@@ -284,23 +370,52 @@ $number-color: rgb(193, 193, 193);
 
 
 // Kullanıcı Yorumları -->
-.section-testimonial{
-  margin-top: 8rem;
 .custom-carousel-control {
-  &.carousel-control-prev {
-      left: -70px;
-  }
-
-  &.carousel-control-next {
-      right: -70px;
-  }
+  position: relative;
+  margin: 0 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 
   i {
-      font-size: 2.5rem;
-      color: #414141;  // İkon rengini siyah yap
+    font-size: 1.5rem;
   }
 }
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
 }
+
+@media (max-width: 425px) {
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .custom-carousel-control {
+    width: 30px;
+    height: 30px;
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}
+
 // End Kullanıcı Yorumları -->
 
 
@@ -557,4 +672,4 @@ $number-color: rgb(193, 193, 193);
     }
   }
 }
-//End Footer
+// End Footer
