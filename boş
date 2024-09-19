@@ -1,139 +1,34 @@
-<div class="dust-control-container position-relative overflow-hidden">
-  <!-- Dust Control İçeriği... -->
-
-  <!-- Uygulama Alanlarımız -->
-  <div class="application-areas-container position-relative">
-    <h2 class="text-center mb-5 mt-4">UYGULAMA ALANLARIMIZ</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 application-cards">
-      <!-- Kartlar -->
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 1" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 1</h5>
+<div class="container faq-section mt-5">
+  <div class="row faq-questions">
+      <div class="col-md-6">
+          <div class="question">
+              <h5>Şirket hakkında genel bilgi verebilir misiniz? <span class="toggle-icon">+</span></h5>
+              <p class="answer">Şirketimiz 2020 yılında kurulmuş ve birçok projeye imza atmıştır.</p>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 2" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 2</h5>
+          <div class="question">
+              <h5>Şirketiniz hangi alanlarda hizmet veriyor? <span class="toggle-icon">+</span></h5>
+              <p class="answer">Şirketimiz teknoloji danışmanlığı, yazılım geliştirme ve dijital çözümler alanında hizmet vermektedir.</p>
           </div>
-        </div>
       </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 3" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 3</h5>
+      <div class="col-md-6">
+          <div class="question">
+              <h5>Ürün kurulumunu kendimiz yapabilir miyiz? <span class="toggle-icon">+</span></h5>
+              <p class="answer">Ürün kurulumunu kendiniz yapabilirsiniz, ancak teknik destek almak isterseniz ekibimiz size yardımcı olacaktır.</p>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 4" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 4</h5>
+          <div class="question">
+              <h5>Yazılım lisansınız nasıl çalışır? <span class="toggle-icon">+</span></h5>
+              <p class="answer">Yazılım lisansımız yıllık abonelik sistemi ile çalışır ve her yıl yenilenmesi gerekir.</p>
           </div>
-        </div>
       </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 5" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 5</h5>
+      <div class="col-md-6">
+          <div class="question">
+              <h5>Ödemeyi nasıl yapabilirim? <span class="toggle-icon">+</span></h5>
+              <p class="answer">Ödemeleri kredi kartı, banka havalesi veya PayPal ile gerçekleştirebilirsiniz.</p>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 6" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 6</h5>
+          <div class="question">
+              <h5>Faturamı nasıl alırım? <span class="toggle-icon">+</span></h5>
+              <p class="answer">Faturalarınız otomatik olarak e-posta adresinize gönderilir.</p>
           </div>
-        </div>
       </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 7" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 7</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 8" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 8</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 9" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 9</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 10" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 10</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 11" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 11</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 12" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 12</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 13" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 13</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 14" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 14</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 15" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 15</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="application-card">
-          <img src="tozkontrol.webp" alt="Toz Kontrol 16" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Uygulama Alanı 16</h5>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>

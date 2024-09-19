@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Unbounded:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
+
+$light-grey: #eeeeee;
+$dark-grey: #484949;
+$mid-grey: rgb(137, 137, 137);
+$number-color: rgb(193, 193, 193);
+
+
+//Navbar ve Video Kısmı
 .hero-video {
   position: relative;
   height: 100vh;
@@ -13,7 +21,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -1; // Video arka planda kalacak şekilde ayarlanıyor
   }
 
   .navbar {
@@ -23,9 +31,10 @@
     width: 100%;
     z-index: 100;
     padding: 1rem 2rem;
+    background: transparent; // Şeffaf navbar
 
     .navbar-toggler {
-      border-color: white;
+      border-color: white; // Toggler beyaz
     }
 
     .navbar-toggler-icon {
@@ -39,60 +48,33 @@
       font-weight: 200;
 
       &:hover {
-        color: #000000;
+        color: #000000; // Hover sırasında linklerin rengi
       }
     }
   }
-
-  .hero-text {
-    position: absolute;
-    top: 23rem;
-    left: 17rem;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff;
-    max-width: 80%;
-    
-    h1 {
-      font-size: 5rem;
-      font-weight: 900;
-      border-radius: 10px;
-      font-family: "Michroma", sans-serif;
-      margin-bottom: 1rem;
-      text-shadow: 3px 1px 5px #000000bd;
-    }
-
-    .typewriter {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #ffffff;
-      font-family: "Helvetica", sans-serif;
-      overflow: hidden;
-      width: 100%; /* Responsive genişlik */
-      max-width: 100%;
-      margin: 0; /* Ortala */
-      text-align: left;
-      text-shadow: 3px 1px 5px #000000bd;
-    }
-  }
 }
+//End Navbar ve Video Kısmı
 
-// Dust Control Kısmı
 
+
+//Referanslar Kısmı
 .reference-carousel {
   width: 100%;
   overflow: hidden;
+  padding: 2rem 0; // Yukarı ve aşağıdan boşluk bırakır
 
   .carousel-track {
     display: flex;
     align-items: center;
-    animation: scrollLeft 15s linear infinite;
-    width: calc(150px * 10);
+    justify-content: flex-start;
+    animation: scrollLeft 20s linear infinite; // Kayan animasyon
+    width: calc(150px * 10); // 10 tane 150px genişlikte img
 
     img {
-      margin: 0 2rem;
+      margin: 0 1rem; // Her iki taraftan boşluk
       width: 150px;
-      height: auto;
+      height: 100px;
+      object-fit: contain; // Görsellerin orantısını korur
     }
   }
 }
@@ -102,114 +84,397 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%); // Görseller sol tarafa doğru kayar
+  }
+}
+//End Referanslar Kısmı
+
+
+
+// Kullanılan Teknolojiler ve Yapılan İşler
+.py-5 {
+  padding: 5rem 0;
+
+  .content-box {
+    background-color: #ececec;
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .number-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(193, 193, 193);
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 5px 10px;
+  }
+
+  .info-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: rgb(137, 137, 137);
+    font-size: 1rem;
+    padding: 1rem;
+
+    h5 {
+      color: #484949;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .custom-heading {
+    color: #525252; 
+    font-weight: 700;
+    text-align: center;
+  }
+  .btn-primary {
+    background-color: #102079; /* Arka plan rengini değiştir, örnek: turuncu */
+    color: #ffffff; /* Yazı rengini beyaz yap */
+    border: no;
+    padding: 10px 20px; /* Butonun içine boşluk ekle */
+    transition: background-color 0.3s ease; /* Hover durumunda yumuşak geçiş efekti */
+  
+    &:hover {
+      background-color: #1c55a6; /* Hover durumunda arka plan rengini koyulaştır */
+      color: #ffffff; /* Yazı rengi hover durumunda da beyaz kalsın */
+    }
+  }
+  
+}
+
+// End Kullanılan Teknolojiler ve Yapılan İşler -->
+
+
+
+// Kullanılan Makineler ve Yararları -->
+.card-wrapper {
+  margin-bottom: 30px;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  height: 100%;
+  &:hover {
+    box-shadow: 8px 12px 31px -10px #ab98ab;
+  }
+
+  // Card img wrapper
+  .card-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    overflow: hidden;
+    img {
+      transition: transform 1s ease;
+    }
+    &:hover img {
+      transform: scale(1.15);
+    }
+  }
+
+  // Card body
+  .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: #fff;
+    transition: height 1.5s ease;
+
+    // Card title
+    .card-title {
+      margin-bottom: calc(50% + 20px);
+      transition: margin-bottom 1.5s ease;
+    }
+
+    // Card content
+    .card-content {
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      transition: bottom 1.5s ease;
+    }
+
+    &:hover {
+      height: 80%;
+    }
+
+    &:hover .card-title {
+      margin-bottom: .75rem;
+    }
+
+    &:hover .card-content {
+      bottom: 0;
+    }
   }
 }
 
-.dust-control-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  margin-top: 30px;
+// card-image ayarları
+.section-machine {
+  margin-top: 5rem;
+  .card {
+    position: relative;
+    overflow: hidden;
 
-  .background-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
+    .card-img-top {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(38, 38, 38, 0.406);
+      padding: 1rem;
+      transition: height 0.3s ease-in-out;
+      height: 3rem;
+      overflow: hidden;
+
+      .card-title {
+        color: white;
+        margin: 0;
+        font-size: 1.3rem;
+      }
+
+      .card-details {
+        color: rgb(255, 255, 255);
+        margin-top: 1rem;
+        display: none;
+        font-weight: 200;
+      }
+    }
+
+    &:hover .card-overlay {
+      height: 50%;
+
+      .card-details {
+        display: block;
+      }
+    }
+  }
+}
+
+
+// End Kullanılan Makineler ve Yararları -->
+
+
+
+
+// Yapıla Yardımlar-->
+// End Yapıla Yardımlar-->
+
+
+
+
+// Kullanıcı Yorumları -->
+.section-testimonial{
+  margin-top: 8rem;
+.custom-carousel-control {
+  &.carousel-control-prev {
+      left: -70px;
   }
 
-  .overlay {
+  &.carousel-control-next {
+      right: -70px;
+  }
+
+  i {
+      font-size: 2.5rem;
+      color: #414141;  // İkon rengini siyah yap
+  }
+}
+}
+// End Kullanıcı Yorumları -->
+
+
+
+// Bülten
+.section-newsletter {
+  position: relative; 
+  background-image: url('/Assets/img/blog-pic.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  z-index: 1;
+  min-height: 50vh;
+
+  &::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 2; 
   }
 
-  .content {
+  .container {
     position: relative;
-    z-index: 10;
-    max-width: 1000px;
-    margin: auto;
-    padding: 2rem;
-    color: #fff;
+    z-index: 3; 
 
-    h2 {
-      font-family: 'Unbounded', sans-serif;
-      font-weight: 800;
-      font-size: 3rem;
-      text-align: center;
-      color: #fff;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      background: linear-gradient(120deg, #014dc7, #ffffff, hsl(212, 100%, 58%));
-      background-size: 200% 200%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      animation: textMove 4s ease infinite alternate;
+    .btn-primary{
+      color: rgb(255, 255, 255);
+      background-color: #1338bf;
+      border: none;
 
-      @media (max-width: 1200px) {
-        font-size: 2.5rem;
-      }
-
-      @media (max-width: 992px) {
-        font-size: 2.2rem;
-      }
-
-      @media (max-width: 768px) {
-        font-size: 2rem;
-      }
-
-      @media (max-width: 576px) {
-        font-size: 1.8rem;
+      &:hover {
+        background-color: #225ed7; /* Hover durumunda arka plan rengini koyulaştır */
+        color: #ffffff; /* Yazı rengi hover durumunda da beyaz kalsın */
       }
     }
+  }
 
-    p{
-      font-family: 'Suse', sans-serif;
-      font-weight: 400;
+  h2, p, form {
+    color: white;
+  }
+}
+
+// End Bülten
+
+
+
+// Son 3 Blog-->
+.blog-section {
+
+.card {
+  border: none;
+  position: relative;
+  color: white;
+
+  img {
+      height: 380px; // Görselin yüksekliği
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(80%);
+  }
+
+  .card-body {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      transition: background 0.3s ease-in-out;
+
+      .card-title {
+          font-size: 1.1rem;
+          font-weight: bold;
+      }
+
+      .card-text {
+          font-size: 1rem;
+      }
+
+      .read-more {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          font-size: 1.3rem;
+          font-weight: bold;
+          color: rgb(0, 0, 4);
+          text-decoration: none;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+              color: #ccc; // Ok işareti üzerine gelindiğinde renk değişimi
+          }
+      }
+  }
+
+  &:hover .card-body {
+      background: rgba(0, 0, 0, 0.471);
+  }
+}}
+// End Son 3 Blog-->
+
+
+
+// S.S.S-->
+.faq-section {
+  padding: 50px 0;
+  border-radius: 8px;
+
+  h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 500;
+  }
+
+  .question {
+    margin-bottom: 20px;
+    background-color: #e9ecefc7; // Soru ve cevaplar için arka plan rengi aynı
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    h5 {
       font-size: 1.2rem;
-      line-height: 1.6;
-      word-spacing: 2px;
-      text-align: center;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
+      color: #494949;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    p.scroll-visible{
-      opacity: 1;
-      transform: translateY(0);
-    }
-      .neon-text-alt {
-        color: #ffffff; // Neon kırmızı renk
-        text-shadow: 0 0 10px #ffffff;
-        font-weight: 700;
+      .toggle-icon {
+        font-size: 1.5rem;
+        color: #555;
       }
-  }
-}
+    }
 
-@keyframes textMove {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 10px;
+      background-color: #e9ecefc7; // Cevabın arka plan rengi soru ile aynı
+      padding: 10px;
+      border-radius: 8px;
+      display: none;
+    }
+
+    &:hover {
+      background-color: #dfe3e8;
+    }
+
+    &.active {
+      background-color: #e9ecefc7; // Açık durumda sorunun arka plan rengi
+
+      h5 .toggle-icon {
+        transform: rotate(0deg); // '+' işareti '−' işaretine döner
+      }
+
+      p {
+        display: block; // Cevap görünür hale gelir
+        background-color: #e9ecefc7; // Cevabın arka plan rengi de aktif soruyla aynı
+        color: rgb(0, 0, 0);
+      }
+    }
   }
 }
+// End S.S.S-->
 
 
 
 // Footer
-
 .footer {
   background-color: #212121;
   padding: 10px 0; 
@@ -292,5 +557,4 @@
     }
   }
 }
-
-
+//End Footer
