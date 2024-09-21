@@ -1,6 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Unbounded:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+// Alttan yukarıya gelen animasyon
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px); // Alttan 100px yukarı çıkar
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Yukarı kaydırıldığında tekrar kaybolan animasyon
+@keyframes slideOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100px); // Aşağı doğru kayar ve kaybolur
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animated {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.fade-out {
+  animation: slideOutDown 0.6s ease-out forwards;
+}
+
+//End Animasyon
 
 $light-grey: #eeeeee;
 $dark-grey: #484949;
@@ -24,88 +63,153 @@ $number-color: rgb(193, 193, 193);
     z-index: -1;
   }
 
+  // Navbar ve menü stilleri
   .navbar {
+
+    .navbar-brand {
+      img {
+        width: 250px;
+
+        @media (max-width: 425px) {
+          width: 200px; 
+        }
+        @media (max-width: 375px) {
+          width: 150px;
+        }
+      }
+    }
+    .menu-icon {
+      margin: 1rem;
+      width: 30px;
+      height: 30px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      font-family: "Montserrat", sans-serif;
+
+      span {
+        font-size: 1rem;
+        color: #fff;
+      }
+    }
+  }
+
+  .offcanvas-end {
+    background-color: #121212; 
+    color: #303030; 
+  }
+
+  .offcanvas-header {
+    h4 {
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff; 
+    }
+  }
+
+  .nav-link {
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    color: #484848 !important;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+
+  .social-media {
+    margin-top: 1.5rem;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none; 
+
+      li {
+        display: inline-block;
+        margin-right: 1rem; 
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          color: #484848; 
+          font-size: 24px; 
+          transition: transform 0.3s ease, color 0.3s ease;
+
+          &:hover {
+            transform: scale(1.2); 
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+
+  .scroll-down {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    padding: 1rem 2rem;
-    background: transparent;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
 
-    .navbar-toggler {
-      border-color: white; 
-    }
-
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-
-    .nav-link {
-      color: #323232;
-      font-size: 18px;
-      font-family: "Helvatica", sans-serif;
-      font-weight: 400;
-
+    .rotate-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #ffffffa8;
+      animation: moveUpDown 2s ease-in-out infinite; 
       &:hover {
-        color: #000000; 
+        color: #ffffff;
       }
     }
 
-    .dropdown-menu {
-      background-color: rgba(255, 255, 255, 0.8); 
-      border: none;
+    i {
+      font-size: 24px;
+      color: #ffffffc3;
+      &:hover {
+        transform: scale(1.2);
+        color: #ffffff; 
+      }
+    }
+  }
+
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes wheel {
+    0% {
+      opacity: 1;
+      top: 5px;
+    }
+    100% {
+      opacity: 0;
+      top: 40px;
+    }
+  }
+
+  .list-inline-item {
+    &:hover {
+      color: #ffffff !important; 
     }
   }
 }
-.scroll-icon {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%) rotate(180deg);
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  width: 100px;
-}
-
-.mouse {
-  width: 30px;
-  height: 60px;
-  border: 0.2rem solid #ffffffa6;
-  border-radius: 5rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ffffffa6;
-    border-radius: 5rem;
-    opacity: 1;
-    animation: wheel 2s infinite;
-  }
-}
-
-// Animasyon tanımları
-@keyframes wheel {
-  0% {
-    opacity: 1;
-    top: 5px;
-  }
-  100% {
-    opacity: 0;
-    top: 40px;
-  }
-}
-
 
 //End Navbar ve Video Kısmı
 
@@ -138,7 +242,7 @@ $number-color: rgb(193, 193, 193);
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); // Görseller sol tarafa doğru kayar
+    transform: translateX(-100%); 
   }
 }
 //End Referanslar Kısmı
@@ -370,50 +474,28 @@ $number-color: rgb(193, 193, 193);
 
 
 // Kullanıcı Yorumları -->
+.carousel slide{
 .custom-carousel-control {
-  position: relative;
-  margin: 0 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  position: absolute;
+  bottom: -50px; // Butonları kartların altına hizalamak için konum
+  width: 50px;
+  height: 50px;
+  background-color: blue; // Renk, değişken olarak tanımlanabilir
 
-  i {
-    font-size: 1.5rem;
+  &-prev {
+    left: 45%;
+  }
+
+  &-next {
+    right: 45%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #fff; // İkonları görünür hale getirmek için arkaplan rengi
+    padding: 10px;
   }
 }
-
-.carousel-controls {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 425px) {
-  .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  h6 {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  .custom-carousel-control {
-    width: 30px;
-    height: 30px;
-
-    i {
-      font-size: 1.2rem;
-    }
-  }
 }
 
 // End Kullanıcı Yorumları -->
@@ -673,3 +755,88 @@ $number-color: rgb(193, 193, 193);
   }
 }
 // End Footer
+
+
+
+//Sol Alt Köşe Butonu
+.floating-circle-area {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  
+
+  .button-contact {
+    background-color: #ffffff;
+    color: #1823c5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.296);
+    transition: background-color 0.3s ease;
+    border:2px #121212 ; 
+
+
+    i {
+      font-size: 20px;
+    }
+
+    &:hover {
+      background-color: #ddedffa1;
+    }
+
+    &.floating-inner {
+      display: none;
+    }
+  }
+
+  &[data-open="yes"] {
+    .floating-inner {
+      display: block;
+    }
+  }
+}
+// End Sol Alt Köşe Butonu
+
+
+
+// Sağ Alt Köşe Butonu
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px; // Sağ alt köşe
+  right: 20px; // Sağ alt köşe
+  display: none; // Başlangıçta görünmesin
+  z-index: 99; // Diğer öğelerin üstünde olsun
+  border: none; // Kenar yok
+  outline: none; // Kenar yok
+  background-color: #102c547a; // Buton rengi (Bootstrap'in Primary rengi)
+  color: white; // Yazı rengi
+  cursor: pointer; // İmleci pointer yap
+  width: 50px; // Sabit genişlik
+  height: 50px; // Sabit yükseklik
+  border-radius: 50%; // Daire şeklinde buton
+  transition: background-color 0.3s ease; // Hover için geçiş efekti
+  display: flex; // Flex ile içerik ortalama
+  justify-content: center; // İkonu yatayda ortala
+  align-items: center; // İkonu dikeyde ortala
+  scroll-behavior: smooth;
+
+  &:hover {
+    background-color: #0056b3; // Hover sırasında arka plan rengini değiştir
+  }
+
+  i {
+    font-size: 20px; // İkon boyutu
+  }
+}
+
+
+// End Sağ Alt Köşe Butonu
