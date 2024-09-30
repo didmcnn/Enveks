@@ -3,83 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/Css/enveksstyle.css">
+    <link rel="stylesheet" href="../../Assets/Css/enveksstyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>ENVEKS</title>
 </head>
 <body>
 
 
-<!-- Navbar ve Hero Video -->
+<!-- Hero Video -->
 <section class="hero-video">
   <div class="video-container">
     <video autoplay muted loop id="backgroundVideo">
-      <source src="Assets/img/dust1.mp4" type="video/mp4">
+      <source src="../../Assets/img/dust1.mp4" type="video/mp4">
     </video>
   </div>
-  
-  <nav class="navbar navbar-expand-lg" aria-label="Seventh navbar example">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <!-- Sol taraf: Offcanvas menu button -->
-      <div class="d-flex align-items-center">
-        <button class="btn d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft" id="menu-button">
-          <div id="menu-lottie" class="menu-icon"></div>
-          <span class="ms-2 nav-text" id="menu-text">MENU</span>
-        </button>
-      </div>
 
-      <!-- Ortada logo -->
-      <a class="navbar-brand mx-auto" href="#">
-        <img src="Assets/img/enveks_logo.png" alt="ENVEKS Logo" class="img-fluid" width="250">
-      </a>
-
-      <!-- Sağ taraf: Arama ikonu ve metin -->
-      <div class="d-flex align-items-center">
-        <img src="Assets/img/search.png" alt="search Icon" class="search-icon" width="20" height="20">
-        <span class="ms-2 nav-text">FIND A DEALER</span>
-      </div>
-    </div>
-  </nav>
-  
-  <!-- Offcanvas menü -->
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-    <div class="offcanvas-header">
-      <button type="button" class="btn-close  mt-4" data-bs-dismiss="offcanvas" aria-label="Close">
-        <div id="close-lottie" class="close-icon"></div> <!-- Çarpı animasyonu -->
-      </button>
-    </div>
-  
-  <div class="offcanvas-body text-end">
-    <ul class="offcanvas-menu">
-      <li class="offcanvas-menu-item">
-        <a class="offcanvas-menu-link" href="#">ANASAYFA</a>
-      </li>
-      <li class="offcanvas-menu-item">
-        <a class="offcanvas-menu-link" href="#">HAKKIMIZ</a>
-      </li>
-      <li class="offcanvas-menu-item">
-        <a class="offcanvas-menu-link" href="#">UYGULAMA ALANLARIMIZ</a>
-      </li>
-      <li class="offcanvas-menu-item">
-        <a class="offcanvas-menu-link" href="#">ÜRÜNLERİMİZ</a>
-      </li>
-      <li class="offcanvas-menu-item">
-        <a class="offcanvas-menu-link" href="#">REFERANSLARIMIZ</a>
-      </li>
-      <li class="offcanvas-menu-item">
-        <a class="offcanvas-menu-link" href="#">İLETİŞİM</a>
-      </li>
-      <li class="offcanvas-menu-item">
-        <a class="offcanvas-menu-link" href="#">BLOG</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
+ <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+ <!-- End Navbar -->
 
   <!-- Scroll Down -->
   <div class="scroll-down d-flex flex-column align-items-center" id="scroll-down">
@@ -87,23 +32,23 @@
     <i class="fas fa-angle-down"></i>
   </div>
 </section>
-<!-- End Navbar ve Hero Video -->
+<!-- End Hero Video -->
 
 
 
 <!-- Kayan Referanslar -->
   <div class="reference-carousel animate-on-scroll">
     <div class="carousel-track">
-      <img src="Assets/img/anglo-american.png" alt="Reference 1" width="150" height="100">
-      <img src="Assets/img/heidelberg-cement.png" alt="Reference 2" width="150" height="100">
-      <img src="Assets/img/lafarge-cement.png" alt="Reference 3" width="150" height="100">
-      <img src="Assets/img/tupras.jpeg" alt="Reference 4" width="150" height="100">
-      <img src="Assets/img/votarantim,.png" alt="Reference 5" width="150" height="100">
-      <img src="Assets/img/anglo-american.png" alt="Reference 6" width="150" height="100">
-      <img src="Assets/img/heidelberg-cement.png" alt="Reference 7" width="150" height="100">
-      <img src="Assets/img/lafarge-cement.png" alt="Reference 8" width="150" height="100">
-      <img src="Assets/img/tupras.jpeg" alt="Reference 9" width="150" height="100">
-      <img src="Assets/img/votarantim,.png" alt="Reference 10" width="150" height="100">
+      <img src="../../Assets/img/anglo-american.png" alt="Reference 1" width="150" height="100">
+      <img src="../../Assets/img/heidelberg-cement.png" alt="Reference 2" width="150" height="100">
+      <img src="../../Assets/img/lafarge-cement.png" alt="Reference 3" width="150" height="100">
+      <img src="../../Assets/img/tupras.jpeg" alt="Reference 4" width="150" height="100">
+      <img src="../../Assets/img/votarantim,.png" alt="Reference 5" width="150" height="100">
+      <img src="../../Assets/img/anglo-american.png" alt="Reference 6" width="150" height="100">
+      <img src="../../Assets/img/heidelberg-cement.png" alt="Reference 7" width="150" height="100">
+      <img src="../Assets/img/lafarge-cement.png" alt="Reference 8" width="150" height="100">
+      <img src="../Assets/img/tupras.jpeg" alt="Reference 9" width="150" height="100">
+      <img src="../Assets/img/votarantim,.png" alt="Reference 10" width="150" height="100">
     </div>
   </div>
 <!-- End Kayan Referanslar -->
@@ -195,7 +140,7 @@
           <div class="row">
             <div class="col-6 col-sm-6 col-md-3">
               <div class="card">
-                <img src="Assets/img/machine.jpg" class="card-img-top" alt="Görsel 1">
+                <img src="../Assets/img/machine.jpg" class="card-img-top" alt="Görsel 1">
                 <div class="card-overlay">
                   <h5 class="card-title">Başlık 1</h5>
                   <p class="card-details">Detaylar 1.</p>
@@ -204,7 +149,7 @@
             </div>
             <div class="col-6 col-sm-6 col-md-3">
               <div class="card">
-                <img src="Assets/img/machine.jpg" class="card-img-top" alt="Görsel 2">
+                <img src="../Assets/img/machine.jpg" class="card-img-top" alt="Görsel 2">
                 <div class="card-overlay">
                   <h5 class="card-title">Başlık 2</h5>
                   <p class="card-details">Detaylar 2.</p>
@@ -213,7 +158,7 @@
             </div>
             <div class="col-6 col-sm-6 col-md-3">
               <div class="card">
-                <img src="Assets/img/machine.jpg" class="card-img-top" alt="Görsel 3">
+                <img src="../Assets/img/machine.jpg" class="card-img-top" alt="Görsel 3">
                 <div class="card-overlay">
                   <h5 class="card-title">Başlık 3</h5>
                   <p class="card-details">Detaylar 3.</p>
@@ -222,7 +167,7 @@
             </div>
             <div class="col-6 col-sm-6 col-md-3">
               <div class="card">
-                <img src="Assets/img/machine.jpg" class="card-img-top" alt="Görsel 4">
+                <img src="../Assets/img/machine.jpg" class="card-img-top" alt="Görsel 4">
                 <div class="card-overlay">
                   <h5 class="card-title">Başlık 4</h5>
                   <p class="card-details">Detaylar 4.</p>
@@ -235,7 +180,7 @@
           <div class="row">
             <div class="col-6 col-sm-6 col-md-3">
               <div class="card">
-                <img src="Assets/img/machine.jpg" class="card-img-top" alt="Görsel 5">
+                <img src="../Assets/img/machine.jpg" class="card-img-top" alt="Görsel 5">
                 <div class="card-overlay">
                   <h5 class="card-title">Başlık 5</h5>
                   <p class="card-details">Detaylar 5.</p>
@@ -244,7 +189,7 @@
             </div>
             <div class="col-6 col-sm-6 col-md-3">
               <div class="card">
-                <img src="Assets/img/machine.jpg" class="card-img-top" alt="Görsel 6">
+                <img src="../Assets/img/machine.jpg" class="card-img-top" alt="Görsel 6">
                 <div class="card-overlay">
                   <h5 class="card-title">Başlık 6</h5>
                   <p class="card-details">Detaylar 6.</p>
@@ -253,7 +198,7 @@
             </div>
             <div class="col-6 col-sm-6 col-md-3">
               <div class="card">
-                <img src="Assets/img/machine.jpg" class="card-img-top" alt="Görsel 7">
+                <img src="../Assets/img/machine.jpg" class="card-img-top" alt="Görsel 7">
                 <div class="card-overlay">
                   <h5 class="card-title">Başlık 7</h5>
                   <p class="card-details">Detaylar 7.</p>
@@ -262,7 +207,7 @@
             </div>
             <div class="col-6 col-sm-6 col-md-3">
               <div class="card">
-                <img src="Assets/img/machine.jpg" class="card-img-top" alt="Görsel 8">
+                <img src="../Assets/img/machine.jpg" class="card-img-top" alt="Görsel 8">
                 <div class="card-overlay">
                   <h5 class="card-title">Başlık 8</h5>
                   <p class="card-details">Detaylar 8.</p>
@@ -305,7 +250,7 @@
           <div class="row py-5">
             <div class="col-12 col-md-4 py-2">
               <div class="bg-light mb-5 p-2 p-lg-5 text-center position-relative">
-                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="Assets/img/green-pic.png" width="96">
+                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="../Assets/img/green-pic.png" width="96">
                 <div class="text-primary mb-4 mt-5 mt-lg-4">
                   <i class="fas fa-quote-left" style="font-size: 32px;"></i>
                 </div>
@@ -316,7 +261,7 @@
             </div>
             <div class="col-12 col-md-4 py-2">
               <div class="bg-light mb-5 p-2 p-lg-5 text-center position-relative">
-                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="Assets/img/green-pic.png" width="96">
+                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="../Assets/img/green-pic.png" width="96">
                 <div class="text-primary mb-4 mt-5 mt-lg-4">
                   <i class="fas fa-quote-left" style="font-size: 32px;"></i>
                 </div>
@@ -327,7 +272,7 @@
             </div>
             <div class="col-12 col-md-4 py-2">
               <div class="bg-light mb-5 p-2 p-lg-5 text-center position-relative">
-                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="Assets/img/green-pic.png" width="96">
+                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="../Assets/img/green-pic.png" width="96">
                 <div class="text-primary mb-4 mt-5 mt-lg-4">
                   <i class="fas fa-quote-left" style="font-size: 32px;"></i>
                 </div>
@@ -342,7 +287,7 @@
           <div class="row py-5">
             <div class="col-12 col-md-4 py-2">
               <div class="bg-light mb-5 p-2 p-lg-5 text-center position-relative">
-                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="Assets/img/green-pic.png" width="96">
+                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="../Assets/img/green-pic.png" width="96">
                 <div class="text-primary mb-4 mt-5 mt-lg-4">
                   <i class="fas fa-quote-left" style="font-size: 32px;"></i>
                 </div>
@@ -353,7 +298,7 @@
             </div>
             <div class="col-12 col-md-4 py-2">
               <div class="bg-light mb-5 p-2 p-lg-5 text-center position-relative">
-                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="Assets/img/green-pic.png" width="96">
+                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="../Assets/img/green-pic.png" width="96">
                 <div class="text-primary mb-4 mt-5 mt-lg-4">
                   <i class="fas fa-quote-left" style="font-size: 32px;"></i>
                 </div>
@@ -364,7 +309,7 @@
             </div>
             <div class="col-12 col-md-4 py-2">
               <div class="bg-light mb-5 p-2 p-lg-5 text-center position-relative">
-                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="Assets/img/green-pic.png" width="96">
+                <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="../Assets/img/green-pic.png" width="96">
                 <div class="text-primary mb-4 mt-5 mt-lg-4">
                   <i class="fas fa-quote-left" style="font-size: 32px;"></i>
                 </div>
@@ -432,7 +377,7 @@
 		<div class="row g-5">
 			<div class="col-md-4">
 				<div class="card border-0">
-					<a href=""><img alt="" class="img-fluid rounded" src="Assets/img/green-pic.png"></a>
+					<a href=""><img alt="" class="img-fluid rounded" src="../Assets/img/green-pic.png"></a>
 					<div class="card-body p-0 text-center mt-4">
 						<h5><a class="text-dark text-decoration-none" href="">A short engaging title</a></h5>
 						<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique nec sapien vel bibendum.</p>
@@ -441,7 +386,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card border-0">
-					<a href=""><img alt="" class="img-fluid rounded" src="Assets/img/green-pic.png"></a>
+					<a href=""><img alt="" class="img-fluid rounded" src="../Assets/img/green-pic.png"></a>
 					<div class="card-body p-0 text-center mt-4">
 						<h5><a class="text-dark text-decoration-none" href="">A short engaging title</a></h5>
 						<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique nec sapien vel bibendum.</p>
@@ -450,7 +395,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="card border-0">
-					<a href=""><img alt="" class="img-fluid rounded" src="Assets/img/green-pic.png"></a>
+					<a href=""><img alt="" class="img-fluid rounded" src="../Assets/img/green-pic.png"></a>
 					<div class="card-body p-0 text-center mt-4">
 						<h5><a class="text-dark text-decoration-none" href="">A short engaging title</a></h5>
 						<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique nec sapien vel bibendum.</p>
@@ -510,58 +455,59 @@
 
 
 
-<!-- Footer-->
-<footer class="footer py-5 animate-on-scroll">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="row">
-          <div class="col-6">
-            <ul class="list-unstyled">
-              <li><a href="#">Ana Sayfa</a></li>
-              <li><a href="#">Hakkımızda</a></li>
-              <li><a href="#">Uygulama Alanlarımız</a></li>
-              <li><a href="#">Ürünlerimiz</a></li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <ul class="list-unstyled">
-              <li><a href="#">Referanslarımız</a></li>
-              <li><a href="#">İletişim</a></li>
-              <li><a href="#">Gizlilik Politikası</a></li>
-              <li><a href="#">Kullanım Koşulları</a></li>
-            </ul>
+<!-- Footer Placeholder -->
+  <footer class="footer py-5 animate-on-scroll">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-2">
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Uygulama Alanlarımız</a></li>
+                <li><a href="#">Ürünlerimiz</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#">Referanslarımız</a></li>
+                <li><a href="#">İletişim</a></li>
+                <li><a href="#">Gizlilik Politikası</a></li>
+                <li><a href="#">Kullanım Koşulları</a></li>
+              </ul>
+            </div>
           </div>
         </div>
+        <div class="col-lg-3 col-md-6 mt-5 mb-5 text-center">
+          <div class="social-icons">
+            <a href="#"><img src="../Assets/img/facebook.png" alt="Facebook" class="social-icon"></a>
+            <a href="#"><img src="../Assets/img/twitter.png" alt="Twitter" class="social-icon"></a>
+            <a href="#"><img src="../Assets/img/instagram.png" alt="Instagram" class="social-icon"></a>
+            <a href="#"><img src="../Assets/img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+            <a href="#"><img src="../Assets/img/youtube.png" alt="YouTube" class="social-icon"></a>
+          </div>        
+        </div>
+        <div class="col-lg-4 col-md-6 mb-2 text-center">
+          <h6>Bülten Aboneliği</h6>
+          <form class="newsletter-form">
+            <div class="mb-2">
+              <input type="email" class="form-control w-75 mx-auto" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Abone Ol</button>
+          </form>
+        </div>
       </div>
-      <div class="col-lg-3 col-md-6 mt-5 mb-5 text-center">
-        <div class="social-icons">
-          <a href="#"><img src="Assets/img/facebook.png" alt="Facebook" class="social-icon"></a>
-          <a href="#"><img src="Assets/img/twitter.png" alt="Twitter" class="social-icon"></a>
-          <a href="#"><img src="Assets/img/instagram.png" alt="Instagram" class="social-icon"></a>
-          <a href="#"><img src="Assets/img/linkedin.png" alt="LinkedIn" class="social-icon"></a>
-          <a href="#"><img src="Assets/img/youtube.png" alt="YouTube" class="social-icon"></a>
-        </div>        
-      </div>
-      <div class="col-lg-4 col-md-6 mb-2 text-center">
-        <h6>Bülten Aboneliği</h6>
-        <form class="newsletter-form">
-          <div class="mb-2">
-            <input type="email" class="form-control w-75 mx-auto" placeholder="Email" required>
-          </div>
-          <button type="submit" class="btn btn-primary btn-sm">Abone Ol</button>
-        </form>
+      <div class="footer-bottom d-flex flex-column align-items-center justify-content-center text-center mt-3">
+        <div class="footer-logo">
+          <img src="../Assets/img/enveks_logo.png" alt="Envex Logo" class="logo mb-1">
+        </div>
+        <p class="small">ENVEX® Tüm Hakları Saklıdır. © 2024</p>
       </div>
     </div>
-    <div class="footer-bottom d-flex flex-column align-items-center justify-content-center text-center mt-3">
-      <div class="footer-logo">
-        <img src="Assets/img/enveks_logo.png" alt="Envex Logo" class="logo mb-1">
-      </div>
-      <p class="small">ENVEX® Tüm Hakları Saklıdır. © 2024</p>
-    </div>
-  </div>
-</footer>
-<!--End Footer-->
+  </footer>
+
+
 
 
 <!---Sol Alt Köşe Buton-->
@@ -591,14 +537,13 @@
 <!--- End Sol Alt Köşe Buton-->
 
 
+
 <!---Sağ ALt Köşe Buton-->
 <button id="scrollToTopBtn" class="btn" title="Go to top">
   <i class="bi bi-chevron-double-up"></i>
 </button>
-
 <!--- End Sağ ALt Köşe Buton-->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="Assets/Js/main.js"></script>
+<script src="../../Assets/Js/main.js"></script>
 </body>
 </html>

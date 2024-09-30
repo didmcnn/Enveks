@@ -35,68 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 //End Animasyon 
 
-  // Sayfa scroll olayı ile navbar camsı efekti kazandırma
-  window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
-
-//Menü ve Close İcon
-document.addEventListener('DOMContentLoaded', function () {
-    // Menü ikonu için Lottie animasyonu
-    var menuAnimation = lottie.loadAnimation({
-      container: document.getElementById('menu-lottie'), // Menü ikonu element
-      renderer: 'svg', // Vektör tabanlı animasyon
-      loop: false, // Animasyon tekrar etmeyecek
-      autoplay: true, // Sayfa yüklenirken otomatik oynatma yok
-      path: 'Assets/img/menu-button.json' // Menü-çarpı animasyonu dosyası
-    });
-
-    // Çarpı ikonu için Lottie animasyonu
-    var closeAnimation = lottie.loadAnimation({
-      container: document.getElementById('close-lottie'), // Çarpı ikonu element
-      renderer: 'svg',
-      loop: false,
-      autoplay: true,
-      path: 'Assets/img/close-button.json' // Çarpı animasyonu dosyası
-    });
-
-    var menuButton = document.getElementById('menu-button');
-    var isOpen = false; // Offcanvas menü durumu
-
-    // Menü butonuna tıklandığında animasyonu oynat
-    menuButton.addEventListener('click', function() {
-      if (!isOpen) {
-        menuAnimation.goToAndPlay(0, true); // Menü ikonunu çarpıya çevir
-      } else {
-        menuAnimation.goToAndPlay(0, true); // Çarpıyı tekrar menüye çevir
-      }
-      isOpen = !isOpen; // Menünün açık mı kapalı mı olduğunu kontrol et
-    });
-
-    // Offcanvas açıldığında çarpı animasyonunu oynat
-    var offcanvas = document.getElementById('offcanvasLeft');
-    offcanvas.addEventListener('shown.bs.offcanvas', function () {
-      closeAnimation.goToAndPlay(0, true); // Çarpı animasyonu oynat
-    });
-
-    // Offcanvas kapandığında animasyonu sıfırla
-    offcanvas.addEventListener('hidden.bs.offcanvas', function () {
-      menuAnimation.goToAndPlay(0, true); // Menü animasyonunu başa döndür
-    });
-});
-
-//End Menü ve Close İcon
-  
-
-//OffCanvas
-//End OffCanvas
-  
-
 
 //Scroll Down JS
 document.getElementById('scroll-down').addEventListener('click', function() {
@@ -105,6 +43,8 @@ document.getElementById('scroll-down').addEventListener('click', function() {
 	});
   });
 //End Scroll Down JS
+
+
 
 
 //S.S.S
@@ -156,3 +96,74 @@ document.getElementById('scrollToTopBtn').addEventListener('click', function() {
 	}
   };
 //EndSağ Alt Köşe Butonu
+
+
+
+
+//Navbar ve Footer
+// Navbar'ı fetch ile yükleme fonksiyonu
+
+
+// Navbar scroll ile cam efekti
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+  } else {
+      navbar.classList.remove('scrolled');
+  }
+});
+
+// Lottie animasyonlarını başlatan fonksiyon
+function initializeNavbarAnimations() {
+  var menuAnimation = lottie.loadAnimation({
+      container: document.getElementById('menu-lottie'), // Menü ikonu element
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: '../Assets/img/menu-button.json'
+  });
+
+  var closeAnimation = lottie.loadAnimation({
+      container: document.getElementById('close-lottie'), // Çarpı ikonu element
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: '../Assets/img/close-button.json'
+  });
+
+  var menuButton = document.getElementById('menu-button');
+  var isOpen = false;
+
+  menuButton.addEventListener('click', function () {
+      if (!isOpen) {
+          menuAnimation.goToAndPlay(0, true);
+      } else {
+          menuAnimation.goToAndPlay(0, true);
+      }
+      isOpen = !isOpen;
+  });
+
+  var offcanvas = document.getElementById('offcanvasLeft');
+  offcanvas.addEventListener('shown.bs.offcanvas', function () {
+      closeAnimation.goToAndPlay(0, true);
+  });
+
+  offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+      menuAnimation.goToAndPlay(0, true);
+  });
+}
+
+//End Navbar ve Footer
+
+
+
+
+//Blog Tema
+// Theme Toggle Function
+function myFunction() {
+  var element = document.body;
+  element.dataset.bsTheme = element.dataset.bsTheme === "light" ? "dark" : "light";
+}
+//End Blog Tema
+

@@ -517,7 +517,6 @@ $number-color: rgb(193, 193, 193);
     background-color: #0056b3;
   }
 }
-
 // End Kullanılan Makineler ve Yararları -->
 
 
@@ -553,7 +552,6 @@ $number-color: rgb(193, 193, 193);
   }
 }
 }
-
 // End Kullanıcı Yorumları -->
 
 
@@ -893,6 +891,49 @@ $number-color: rgb(193, 193, 193);
     font-size: 20px; // İkon boyutu
   }
 }
-
-
 // End Sağ Alt Köşe Butonu
+
+
+
+//Blog
+/* Global styles for both themes */
+.section-blog {
+  text-align: left; /* İçerik sola yaslanmış */
+  padding: 2rem;
+}
+
+/* Başlık linkleri stili */
+.section-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.section-link:hover {
+  border-bottom: 2px solid currentColor; /* Hover durumu: Altı çizili */
+}
+
+/* Dark Theme */
+body[data-bs-theme="dark"] {
+  background-color: #000000; /* Tamamen siyah */
+  color: #ffffff; /* Beyaz yazılar */
+}
+
+body[data-bs-theme="dark"] .section-link {
+  color: #ffffff;
+}
+
+/* Light Theme */
+body[data-bs-theme="light"] {
+  background-color: #ffffff; /* Tamamen beyaz */
+  color: #000000; /* Siyah yazılar */
+}
+
+body[data-bs-theme="light"] .section-link {
+  color: #000000;
+}
+
+
+
+//End Blog
