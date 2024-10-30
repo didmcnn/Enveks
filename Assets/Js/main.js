@@ -102,7 +102,17 @@ document.getElementById('scrollToTopBtn').addEventListener('click', function() {
 
 //Navbar ve Footer
 // Navbar'ı fetch ile yükleme fonksiyonu
+fetch('navbar.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('navbar-placeholder').innerHTML = data;
+});
 
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('footer-placeholder').innerHTML = data;
+});
 
 // Navbar scroll ile cam efekti
 window.addEventListener('scroll', function() {
@@ -153,14 +163,12 @@ function initializeNavbarAnimations() {
       menuAnimation.goToAndPlay(0, true);
   });
 }
-
 //End Navbar ve Footer
 
 
 
 
 //Blog Tema
-// Theme Toggle Function
 function myFunction() {
   var element = document.body;
   element.dataset.bsTheme = element.dataset.bsTheme === "light" ? "dark" : "light";
